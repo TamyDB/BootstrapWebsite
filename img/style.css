@@ -1,0 +1,19 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+    background-color: #E76F51;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.nav .nav-link.active {
+    background-color: #fff;
+    color: #E76F51;
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.nav .nav-link {
+    color: white;
+}
