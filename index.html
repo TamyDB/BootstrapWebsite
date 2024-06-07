@@ -9,32 +9,168 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Project 3</title>
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg sticky-top">
-        <div class="container p-2">
-            <h1 class="navbar-brand ">Bootstrap Pizza's</h1>
-            <nav>
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a href="" class="nav-link active">Sobre nós</a>
+    <header class="navbar navbar-expand-lg sticky-top p-3" id="hud">
+        <div class="container">
+            <h1 class="navbar-brand m-0">Bootstrap Pizza's</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu">
+                <ul class="nav nav-pills d-block d-md-flex p-2">
+                    <li class="nav-item p-1">
+                        <a href="#about-us" class="nav-link active">
+                            <i class="bi bi-house me-1"></i>
+                            Sobre nós
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Eventos</a>
+                    <li class="nav-item p-1">
+                        <a href="#events" class="nav-link">
+                            <i class="bi bi-calendar4 me-1"></i>
+                            Eventos
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Cardápio</a>
+                    <li class="nav-item p-1">
+                        <a href="" class="nav-link">
+                            <i class="bi bi-card-list me-1"></i>
+                            Cardápio
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Entre em contato</a>
+                    <li class="nav-item p-1">
+                        <a href="" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Entre em contato
+                        </a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+    <main data-bs-spy="scroll" data-bs-target="hud">
+        <div id="c-slide" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#c-slide" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#c-slide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#c-slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item c-item bg-img-1  active"></div>
+                <div class="carousel-item c-item bg-img-2"></div>
+                <div class="carousel-item c-item bg-img-3"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#c-slide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#c-slide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section class="pt-5 pb-5" id="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="img/inside.png" class="d-block w-100 rounded" alt="Foto do espaço do restaurante">
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="title">Sobre <span>o Restaurante</span></h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aspernatur et fugit, qui
+                            tenetur nisi ipsam culpa. Tempora blanditiis fuga doloribus, corporis a reiciendis quisquam
+                            at quaerat, minima, mollitia qui.
+                        </p>
+                        <h3 class="title">Sobre <span>o espaço</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rerum optio explicabo eius
+                            itaque, illo iusto, rem cupiditate consequuntur harum obcaecati magnam repellat atque quia
+                            soluta id non odio deserunt?
+                        </p>
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5 pb-5" id="events">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title text-center pb-5">Venha <span>festejar conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12" id="row-img">
+                        <img class="d-block w-100 pt-2" src="img/birthday.jpg" alt="Bolo de Aniversário">
+                        <h3 class="title pt-3 pb-2"><span>Venha fazer seu aniversário conosco!</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea provident facilis perspiciatis
+                            obcaecati rem, doloremque voluptatem maxime dolorum? Debitis, tenetur voluptatibus. Fugit
+                            quidem culpa assumenda laborum aut repellendus, facere distinctio.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" id="row-img">
+                        <img class="d-block w-100 pt-2" src="img/waiter.jpg" alt="Bolo de Aniversário">
+                        <h3 class="title pt-3 pb-2"><span>Temos rodízio também!</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea provident facilis perspiciatis
+                            obcaecati rem, doloremque voluptatem maxime dolorum? Debitis, tenetur voluptatibus. Fugit
+                            quidem culpa assumenda laborum aut repellendus, facere distinctio.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" id="row-img">
+                        <img class="d-block w-100 pt-2" src="img/happyhour.jpg" alt="Bolo de Aniversário">
+                        <h3 class="title pt-3 pb-2"><span>Traga seus colegas de trabalho para o nosso Happy Hour</span>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea provident facilis perspiciatis
+                            obcaecati rem, doloremque voluptatem maxime dolorum? Debitis, tenetur voluptatibus. Fugit
+                            quidem culpa assumenda laborum aut repellendus, facere distinctio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title text-center pb-5">
+                        Nosso <span>Cardápio</span>
+                    </h2>
+                </div>
+
+                <div class="row">
+                    <aside class="col-md-2">
+                        <div class="nav nav-pills flex-column nav-menu">
+                            <button type="button"
+                                class="fw-bold text-start nav-link text-colored active">Entradas</button>
+                            <button type="button" class="fw-bold text-start nav-link text-colored">Pizzas</button>
+                            <button type="button" class="fw-bold text-start nav-link text-colored">Pizzas
+                                Especiais</button>
+                            <button type="button" class="fw-bold text-start nav-link text-colored">Sobremesas</button>
+                            <button type="button" class="fw-bold text-start nav-link text-colored">Bebidas</button>
+                        </div>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="" alt="">
+                                        <h5 class="text-colored fw-bold"></h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

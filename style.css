@@ -1,19 +1,65 @@
 body {
     font-family: "Roboto", sans-serif;
+    background-color: white;
 }
 
 .navbar {
-    background-color: #E76F51;
+    background-color: #2A9D8F;
     font-family: "Poetsen One", sans-serif;
 }
 
-.nav .nav-link.active {
+#hud .nav .nav-link.active {
     background-color: #fff;
-    color: #E76F51;
+    color: #2A9D8F;
 }
 
 .navbar-brand,
 .navbar-brand:hover,
-.nav .nav-link {
+#hud .nav .nav-link,
+.nav-menu .nav-link.active:hover {
     color: white;
+}
+
+.bg-img-1 {
+    background-image: url(./img/pizza.jpg);
+}
+
+.bg-img-2 {
+    background-image: url(./img/pizza2.jpg);
+}
+
+.bg-img-3 {
+    background-image: url(./img/pizza3.jpg);
+}
+
+.c-item {
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-family: "Poetsen One", sans-serif;
+}
+
+.title span {
+    color: #2A9D8F;
+}
+
+#row-img img {
+    height: 375px;
+}
+
+.text-colored {
+    color: #2A9D8F;
+}
+
+.nav-menu .nav-link.active {
+    background-color: #2A9D8F;
+    color: #fff;
+}
+
+.nav-menu .nav-link:hover {
+    color: #2A9D8F;
 }
